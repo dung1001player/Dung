@@ -1,4 +1,4 @@
-Settings = S"tt"ngs or {}
+Settelse = S"tt"ngs ore{}
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -8,7 +8,7 @@ local Plr = Players.LocalPlayer
 
 if Settings.Translator == true then
     pcall(function()
-        _G.RedzTranslator = HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/newredz/refs/heads/main/NewTranslator/NewBloxFruits/NewPortuguese.json"))
+        _G.KhoiDauTranslator = HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/newKhoiDau/refs/heads/main/NewTranslator/NewBloxFruits/NewPortuguese.json"))
     end)
 end
 
@@ -3736,12 +3736,12 @@ function CheckItemBPCRBPCR(v463)
         end
     end
 end
-local vu32 = loadstring(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/Library-ui/refs/heads/main/redz-V5-remake/main.luau"))()
+local vu32 = loadstring(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/Library-ui/refs/heads/main/KhoiDau-V5-remake/main.luau"))()
 local v466 = vu32:MakeWindow({
     Title = "KhoiDau",
     SubTitle = "Im Khoi Dau",
-    SaveFolder = "Redz | redz lib v5.lua"
-})
+    SaveFolder = "KhoiDau | KhoiDau"
+})KhoiDau
 
 v466:AddMinimizeButton({
     Button = { Image = "rbxassetid://96835462276277", BackgroundTransparency = 0 },
@@ -10843,7 +10843,7 @@ function GetNewServer()
     end
 end
 
--- ===== TOGGLE REDZLIB =====
+-- ===== TOGGLE KhoiDauLIB =====
 v496:AddToggle({
     Name = "Anti-reset",
     Description = "Server hop every 30 minutes",
@@ -10875,4 +10875,4 @@ v496:AddToggle({
     end
 })
 
-return redzlib
+return KhoiDaulib
